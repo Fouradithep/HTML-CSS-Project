@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สูตรการคำนวณหาพื้นที่รูปเรขาคณิต</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#สี่เหลี่ยม">สี่เหลี่ยม</a></li>
+        <li><a href="#สามเหลี่ยม">สามเหลี่ยม</a></li>
+        <li><a href="#วงกลม">วงกลม</a></li>
+    </div>
+
+    <div class="content">
+        <section id="home">
+            <h1>สูตรการคำนวณหาพื้นที่รูปเรขาคณิต</h1>
+            <p>เลือกรูปเรขาคณิตที่ต้องการ</p>
+            <button onclick="scrollToSection('สี่เหลี่ยม')"class="button button1">สี่เหลี่ยม</button>
+            <button onclick="scrollToSection('สามเหลี่ยม')"class="button button2">สามเหลี่ยม</button>
+            <button onclick="scrollToSection('วงกลม')"class="button button3">วงกลม</button>
+        </section>
+        <section id="สี่เหลี่ยม">
+            <h1>รูปสี่เหลี่ยม</h1>
+            <img src="https://static.trueplookpanya.com/tppy/member/m_557500_560000/559384/cms/images/05%20%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1%E0%B8%9C%E0%B8%B7%E0%B8%99%E0%B8%9C%E0%B9%89%E0%B8%B2.jpg" width="200px" height="200px">
+            <p>พื้นที่สีเหลี่ยมผืนผ้า = กว้าง x ยาว</p>
+        </section>
+        <section id="สามเหลี่ยม">
+            <h1>รูปสามเหลี่ยม</h1>
+            <img src="https://static.trueplookpanya.com/tppy/member/m_557500_560000/559384/cms/images/02%20%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A1%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B.jpg" width="200px" height="200px">
+            <p>พื้นที่สามเหลี่ยมทั่วไป = 1/2 x สูง x ฐาน</p>
+        </section>
+        <section id="วงกลม">
+            <h1>รูปวงกลม</h1>
+            <img src="https://static.trueplookpanya.com/tppy/member/m_557500_560000/559384/cms/images/11%20%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C%E0%B8%B4%E0%B8%A7%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%A1.jpg"width="200px" height="200px">
+            <p>พื้นที่ผิววงกลม = πr^2 <br>π(พาย)เป็นค่าคงที่ประมาณ 3.14159<br>r คือ รัศมีของวงกลม</p>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 WebsiteProject HTML CSS</p>
+        <p>
+            |<a href="#home">Home</a>|
+            
+        </p>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="js\bootstrap.min.js"></script>
+</body>
+
+</html>
